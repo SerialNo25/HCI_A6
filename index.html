@@ -22,17 +22,20 @@
             padding: 2%;
             transform: rotate(-12deg);
         }
-        .header h1 {
-            color: #333;
-            margin: 00%;
+        .container {
+            max-width: 80%;
+            margin: 5% auto;
+            padding: 5%;
+            background-color: #6da675;
+            border-radius: 2.50%;
         }
-        .header img.button {
+        .container img.button {
             width: 40%; /* Adjust the width as needed */
             height: auto; /* Maintain aspect ratio */
             cursor: pointer; /* Change cursor to pointer on hover */
             margin: 10% 4%; /* Adjust margin between buttons */
         }
-        .header img.overlay {
+        .container img.overlay {
             position: absolute; /* Position relative to parent */
             top: 47.50%;
             left: 16%;
@@ -41,7 +44,7 @@
             opacity: 100%; /* Adjust opacity as needed */
             transform: rotate(-150deg);
         }
-        .header img.AppleOverlay {
+        .container img.AppleOverlay {
             position: absolute; /* Position relative to parent */
             top: 45.50%;
             left: 77%;
@@ -65,7 +68,7 @@
         <img src="assets/images/PokeEmOnLogo.png" alt="Header Image">
     </header>
 
-    <div class="header">
+    <div class="container">
         <a onclick="window.location.href='pokemon.html'">
             <img src="assets/images/Buttons/AdventureButton.png" alt="Header Button" class="button">
             <img src="assets/images/Icons/SwordIcon.png" alt="Overlay" class="overlay">
