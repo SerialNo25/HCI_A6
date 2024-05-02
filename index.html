@@ -22,12 +22,33 @@
         header img {
             width: 45%; /* Adjust the width as needed */
             height: auto; /* Maintain aspect ratio */
-            padding: 6%;
+            padding: 3%;
             transform: rotate(-12deg);
         }
         .header h1 {
             color: #333;
             margin: 0;
+        }
+        .tainer {
+            max-width: 100%;
+            max-height: 100%;
+            padding: 3%;
+            background-color: #6da675;
+            border-radius: 0.50%;
+            text-align: center; /* Center content horizontally within the container */
+        }
+        .tainer img.button {
+            width: 9%; /* Adjust the width as needed */
+            height: 20% ; /* Maintain aspect ratio */
+            cursor: pointer; /* Change cursor to pointer on hover */
+            margin: -9% 16%; /* Adjust margin between buttons */
+        }
+        .tainer img.button1 {
+            width: 18%; /* Adjust the width as needed */
+            height: 20%; /* Maintain aspect ratio */
+            cursor: pointer; /* Change cursor to pointer on hover */
+            margin: -9.50% 18%; /* Adjust margin between buttons */
+            transform: rotate(-150deg);
         }
         .container {
             max-width: 100%;
@@ -48,6 +69,7 @@
             top: calc(47.50% - 0.5*-25px); /* Adjust based on overlay image height */
             left: calc(16% - 0.5*10px); /* Adjust based on overlay image width */
             width: 18%; /* Cover entire parent */
+            height: auto;
             opacity: 100%; /* Adjust opacity as needed */
             transform: rotate(-150deg);
         }
@@ -57,6 +79,7 @@
             top: calc(45.50% - 0.5*-25px); /* Adjust based on overlay image height */
             left: calc(77% - 0.5*10px); /* Adjust based on overlay image width */
             width: 9%; /* Cover entire parent */
+            height: auto;
             opacity: 100%; /* Adjust opacity as needed */
         }
         .footer {
@@ -75,16 +98,25 @@
         <img src="assets/images/PokeEmOnLogo.png" alt="Header Image">
     </header>
 
+
+    <div class="tainer">
+        <a href="adventure_select_screen.html">
+            <img src="assets/images/Icons/SwordIcon.png" alt="Header Button" class="button1">
+        </a>
+
+        <a href="picnic_select_screen.html">
+            <img src="assets/images/Icons/AppleIcon.png" alt="Header Button" class="button">
+        </a>
+    </div>
+
     <div class="container">
         <a href="adventure_select_screen.html">
             <img src="assets/images/Buttons/AdventureButton.png" alt="Header Button" class="button">
         </a>
-        <a><img src="assets/images/Icons/SwordIcon.png" alt="Overlay" class="overlay"></a>
 
         <a href="picnic_select_screen.html">
             <img src="assets/images/Buttons/PicnicButton.png" alt="Header Button" class="button">
         </a>
-        <a><img src="assets/images/Icons/AppleIcon.png" alt="Overlay" class="AppleOverlay"></a>
     </div>
 
     <div class="footer">
