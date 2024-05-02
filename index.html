@@ -10,6 +10,9 @@
             background-color: #6da675;
             margin: 00%;
             padding: 00%;
+            justify-content: center; /* Center items horizontally */
+            align-items: center; /* Center items vertically */
+            height: 100vh; /* Use the full height of the viewport */
         }
         header {
             background-color: #6da675;
@@ -17,49 +20,54 @@
             text-align: center;
         }
         header img {
-            width: 50%; /* Adjust the width as needed */
+            width: 45%; /* Adjust the width as needed */
             height: auto; /* Maintain aspect ratio */
-            padding: 2%;
+            padding: 6%;
             transform: rotate(-12deg);
         }
+        .header h1 {
+            color: #333;
+            margin: 0;
+        }
         .container {
-            max-width: 80%;
-            margin: 5% auto;
-            padding: 5%;
+            max-width: 100%;
+            max-height: 100%;
+            padding: 3%;
             background-color: #6da675;
-            border-radius: 2.50%;
+            border-radius: 0.50%;
+            text-align: center; /* Center content horizontally within the container */
         }
         .container img.button {
             width: 40%; /* Adjust the width as needed */
             height: auto; /* Maintain aspect ratio */
             cursor: pointer; /* Change cursor to pointer on hover */
-            margin: 10% 4%; /* Adjust margin between buttons */
+            margin: 00% 3%; /* Adjust margin between buttons */
         }
         .container img.overlay {
             position: absolute; /* Position relative to parent */
-            top: 47.50%;
+            top: 48.50%;
             left: 16%;
-            width: 20%; /* Cover entire parent */
+            width: 18%; /* Cover entire parent */
             height: auto;
             opacity: 100%; /* Adjust opacity as needed */
             transform: rotate(-150deg);
         }
         .container img.AppleOverlay {
             position: absolute; /* Position relative to parent */
-            top: 45.50%;
+            top: 46.50%;
             left: 77%;
-            width: 10%; /* Cover entire parent */
+            width: 9%; /* Cover entire parent */
             height: auto;
             opacity: 100%; /* Adjust opacity as needed */
         }
         .footer {
             background-color: #0b935d;
-            padding: 2%;
+            padding: 1%;
             text-align: center;
             position: fixed;
             left: 00%;
             bottom: 00%;
-            width: 130%;
+            width: 100%;
         }
     </style>
 </head>
@@ -71,15 +79,16 @@
     <div class="container">
         <a onclick="window.location.href='pokemon.html'">
             <img src="assets/images/Buttons/AdventureButton.png" alt="Header Button" class="button">
-            <img src="assets/images/Icons/SwordIcon.png" alt="Overlay" class="overlay">
         </a>
+        <img src="assets/images/Icons/SwordIcon.png" alt="Overlay" class="overlay">
         <a onclick="window.location.href='pokemon.html'">
             <img src="assets/images/Buttons/PicnicButton.png" alt="Header Button" class="button">
-            <img src="assets/images/Icons/AppleIcon.png" alt="Overlay" class="AppleOverlay">
         </a>
+        <img src="assets/images/Icons/AppleIcon.png" alt="Overlay" class="AppleOverlay">
     </div>
 
     <div class="footer">
+        <p>&copy; 2024 Group 9. No rights reserved.</p>
     </div>
 
 
