@@ -17,47 +17,66 @@
             text-align: center;
         }
         header img {
-            width: 400px; /* Adjust the width as needed */
+            width: 600px; /* Adjust the width as needed */
             height: auto; /* Maintain aspect ratio */
-        }
-        .header {
-            background-color: #6da675;
-            padding: 20px;
-            text-align: center;
+            padding: 50px;
+            transform: rotate(-12deg);
         }
         .header h1 {
             color: #333;
             margin: 0;
         }
         .footer {
-            background-color: #0b931d;
-            padding: 20px;
+            background-color: #0b935d;
+            padding: 40px;
             text-align: center;
             position: fixed;
             left: 0;
             bottom: 0;
             width: 100%;
         }
+        .footer img.button {
+            width: 600px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+            cursor: pointer; /* Change cursor to pointer on hover */
+        }
+        .footer img.overlay {
+            position: absolute; /* Position relative to parent */
+            top: -87px;
+            left: 250px;
+            width: 300px; /* Cover entire parent */
+            height: auto;
+            opacity: 100%; /* Adjust opacity as needed */
+            transform: rotate(-150deg);
+        }
+        .footer img.AppleOverlay {
+            position: absolute; /* Position relative to parent */
+            top: -73px;
+            left: 1200px;
+            width: 120px; /* Cover entire parent */
+            height: auto;
+            opacity: 100%; /* Adjust opacity as needed */
+        }
     </style>
 </head>
 <body>
     <header>
-        <img src="header_image.png" alt="Header Image">
-        <h1>Welcome to the Pokémon World!</h1>
+        <img src="assets/images/PokeEmOnLogo.png" alt="Header Image">
     </header>
-    <div class="header">
-        <h1>Welcome to the Pokémon World!</h1>
-    </div>
-    <p>Click the link below to view the pokimons in augmented bad reality (AR) or in 3D if AR is not supported on your device.</p>
-    <a rel="ar" href="statue.usdz">
-        Show statue in AR
-    </a>
 
-    <button onclick="window.location.href='pokemon.html'">Go to the cheesePage</button>
+    <div class="footer">
+        <a onclick="window.location.href='pokemon.html'">
+            <img src="assets/images/Buttons/AdventureButton.png" alt="Footer Button" class="button">
+            <img src="assets/images/Icons/SwordIcon.png" alt="Overlay" class="overlay">
+        </a>
+        <a onclick="window.location.href='pokemon.html'">
+            <img src="assets/images/Buttons/PicnicButton.png" alt="Footer Button" class="button">
+            <img src="assets/images/Icons/AppleIcon.png" alt="Overlay" class="AppleOverlay">
+        </a>
+    </div>
+
+
 
     <script src="https://unpkg.com/@google/model-viewer"></script>
-    <div class="footer">
-        <p>&copy; 2024 Pokémon Company. All rights reserved.</p>
-    </div>
 </body>
 </html>
