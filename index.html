@@ -3,15 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D Model AR Viewer</title>
+    <title>Welcome to the world of PokeEmOn!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #6da675;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #6da675;
+            padding: 20px;
+            text-align: center;
+        }
+        header img {
+            width: 400px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .header {
+            background-color: #6da675;
+            padding: 20px;
+            text-align: center;
+        }
+        .header h1 {
+            color: #333;
+            margin: 0;
+        }
+        .footer {
+            background-color: #0b931d;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    <h1>View Your 3D Model in AR</h1>
+    <header>
+        <img src="header_image.png" alt="Header Image">
+        <h1>Welcome to the Pokémon World!</h1>
+    </header>
+    <div class="header">
+        <h1>Welcome to the Pokémon World!</h1>
+    </div>
     <p>Click the link below to view the pokimons in augmented bad reality (AR) or in 3D if AR is not supported on your device.</p>
     <a rel="ar" href="statue.usdz">
         Show statue in AR
     </a>
 
+    <button onclick="window.location.href='pokemon.html'">Go to the cheesePage</button>
+
     <script src="https://unpkg.com/@google/model-viewer"></script>
+    <div class="footer">
+        <p>&copy; 2024 Pokémon Company. All rights reserved.</p>
+    </div>
 </body>
 </html>
