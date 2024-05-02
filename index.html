@@ -45,16 +45,17 @@
         }
         .container img.overlay {
             position: absolute; /* Position relative to parent */
-            top: 47.50%;
-            left: 16%;
+            top: calc(47.50% - 0.5*-25px); /* Adjust based on overlay image height */
+            left: calc(16% - 0.5*10px); /* Adjust based on overlay image width */
             width: 18%; /* Cover entire parent */
             opacity: 100%; /* Adjust opacity as needed */
             transform: rotate(-150deg);
         }
+
         .container img.AppleOverlay {
             position: absolute; /* Position relative to parent */
-            top: 45.50%;
-            left: 77%;
+            top: calc(45.50% - 0.5*-25px); /* Adjust based on overlay image height */
+            left: calc(77% - 0.5*10px); /* Adjust based on overlay image width */
             width: 9%; /* Cover entire parent */
             opacity: 100%; /* Adjust opacity as needed */
         }
@@ -75,7 +76,7 @@
     </header>
 
     <div class="container">
-        <a href="picnic_select_screen.html">
+        <a href="adventure_select_screen.html">
             <img src="assets/images/Buttons/AdventureButton.png" alt="Header Button" class="button">
         </a>
         <a><img src="assets/images/Icons/SwordIcon.png" alt="Overlay" class="overlay"></a>
